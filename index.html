@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Academia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>IMC Academia</h1>
+
+    <input type="text" id="nome" placeholder="Nome do aluno">
+    <input type="text" id="mes" placeholder="Mês">
+    <input type="number" id="peso" placeholder="Peso (kg)">
+    <input type="number" id="altura" placeholder="Altura (ex: 1.75)">
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <button onclick="listarAlunos()">Histórico</button>
+    <button onclick="limparAlunos()">Limpar Tudo</button>
+
+    <hr>
+
+    <input type="text" id="busca" placeholder="Buscar aluno">
+
+    <button onclick="buscarAluno()">Buscar</button>
+    <button onclick="gerarGrafico()">Gráfico</button>
+
+    <canvas id="graficoIMC"></canvas>
+
+    <div id="resultado"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
